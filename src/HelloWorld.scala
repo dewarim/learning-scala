@@ -32,8 +32,8 @@ cleanup. Like in Groovy.
 
     println(concat("foo", "bar"))
 
-    println(singleLinefunction(null, "not-null"))
-    println(singleLinefunction("not-null", " not-null-too"))
+    println(singleLineFunction(null, "not-null"))
+    println(singleLineFunction("not-null", " not-null-too"))
 
   }
 
