@@ -1,9 +1,9 @@
 /*
  * Learning the syntax
  */
-object HelloWorld {
+object HelloWorld extends App{
 
-  def main(args: Array[String]) {
+  override def main(args: Array[String]) {
 
     // val'ues are final:
     val finalString: String = "Hello"
@@ -64,9 +64,9 @@ cleanup. Like in Groovy.
   }
 
   /*
-   * You can also define functins in a single line. I guess this makes Perl one-liners possible in Scala ;)
+   * You can also define functions in a single line. I guess this makes Perl one-liners possible in Scala ;)
    * Also: should be only used for extremely simple functions.
    */
-  def singleLinefunction(a: String, b: String) = if (a != null && b != null) concat(a, b) else filterNull(a, b)
+  def singleLineFunction(a: String, b: String) = if (a != null && b != null) concat(a, b) else filterNull(a, b)
 
 }
