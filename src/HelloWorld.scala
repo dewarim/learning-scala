@@ -1,7 +1,7 @@
 /*
  * Learning the syntax
  */
-object HelloWorld extends App{
+object HelloWorld extends App {
 
   override def main(args: Array[String]) {
 
@@ -38,12 +38,12 @@ cleanup. Like in Groovy.
   }
 
   /**
-   * Function definition: like with simple variable definitions, the return type is appended with :$type to the 
-   * signature
-   * @param s1 the first string
-   * @param s2 the second string
-   * @return the combined string of first + second.
-   */
+    * Function definition: like with simple variable definitions, the return type is appended with :$type to the
+    * signature
+    * @param s1 the first string
+    * @param s2 the second string
+    * @return the combined string of first + second.
+    */
   def concat(s1: String, s2: String): String = {
     return s1 + s2
   }
@@ -58,7 +58,8 @@ cleanup. Like in Groovy.
     else if (b == null)
       a // Scala also has the ugly one-line if-statements without braces, which no sane man would use.
     else
-    // Danger: this else belongs to the b==null check, and can never be called. Comment it out if you want to 
+    // Danger: this else belongs to the b==null check, because Scala does not recognize else-if as a single expression.
+    // The following line will  never be called. Remove the last "else"  if you want to
     // see the following sentence:
       "Why do you call me for filtering if you got no nulls?"
   }
